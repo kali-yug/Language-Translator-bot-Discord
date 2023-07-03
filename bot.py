@@ -34,7 +34,6 @@ async def on_message(message):
     print(user_lang)
 
     if user_lang != Language.ENGLISH:
-        # detected_language = detector.detect(user_message)
         translation = ts.translate_text(user_message)
         await message.channel.send(translation)
         print(translation)
