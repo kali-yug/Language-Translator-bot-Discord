@@ -8,7 +8,6 @@ import translators as ts
 
 load_dotenv()
 
-# bot = commands.Bot(command_prefix="$")
 
 intents = discord.Intents.all()
 intents.message_content = True
